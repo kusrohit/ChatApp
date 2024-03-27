@@ -16,3 +16,26 @@ so --save-dev means this package install only in project where -g means this pac
 `PUT Method:` When we want to put some data on server like upload photo<br>
 `PATCH Method:` When we want to update or change some existing entry in db on the server like name change<br>
 `DELETE Method:` When we want to something on server<br>
+
+## Status Code
+
+A status code is a numeric code returned by a server in response to a client's request made to the server. It provides information about the status of the request.
+
+A status code is a numeric code returned by a server in response to a client's request made to the server. It provides information about the status of the request. There are many status codes, each indicating a different outcome of the request. The most common status code is "200 OK," which indicates that the request has succeeded. Other common status codes include "404 Not Found," indicating that the requested resource could not be found, and "500 Internal Server Error," indicating that there was an error on the server side. <br>
+
+The status code is typically a three-digit number. The first digit indicates the general category of the response: <br>
+
+- 1xx: Informational
+- 2xx: Success
+- 3xx: Redirection
+- 4xx: Client Error
+- 5xx: Server Error
+
+Among the HTTP status codes, some of the most commonly encountered : <br>
+
+- 200 OK
+- 404 Not Found
+- 403 Forbidden
+- 500 Internal Server Error
+- 302 Found (or 301 Moved Permanently)
+- 401 Unauthorized

@@ -16,6 +16,7 @@ const conversationSchema = new mongoose.Schema(
       },
     ],
   },
+  // createdAt, updatedAt
   { timestamps: true }
 );
 
