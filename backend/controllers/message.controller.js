@@ -54,7 +54,7 @@ export const getMessages = async (req, res) => {
     }).populate("messages"); // not references but actual messages
 
     if (!conversation) {
-      return req.status(200).json([]);
+      return res.status(200).json([]);
     }
 
     const messages = conversation.messages;

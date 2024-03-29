@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import GenderCheckbox from "./GenderCheckbox";
 import { Link } from "react-router-dom";
+import useSignup from "../../hooks/useSignup";
 
 function SignUp() {
   const [inputs, setInputs] = useState({
@@ -10,6 +11,8 @@ function SignUp() {
     confirmPassword: "",
     gender: "",
   });
+
+  const {loading, signup} = useSignup( )
 
   const handleCheckboxChange = (gender) => {
     setInputs({...inputs, gender})
@@ -99,8 +102,8 @@ function SignUp() {
           </Link>
 
           <div>
-            <button className="btn btn-sm btn-block mt-2 border border-slate-700">
-              Sign Up
+            <button className="btn btn-sm btn-block mt-2 border border-slate-700" disabled={loading}>
+              {loading ? <span className="loading loading-spinner"></span> : "Sign Up"}
             </button>
           </div>
         </form>
