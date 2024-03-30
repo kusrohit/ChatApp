@@ -4,7 +4,7 @@ const getUsersForSidebar = async (req, res) => {
   try {
     const loggedInUserId = req.user._id;
 
-    const filteredUsers = await User.find({ id: { $ne: loggedInUserId } }); // this find(id: ) thing exclude me from the side bar
+    const filteredUsers = await User.find({ _id: { $ne: loggedInUserId } }).select("-password"); // this find(id: ) thing exclude me from the side bar
 
     res.status(200).json(filteredUsers);
   } catch (error) {
