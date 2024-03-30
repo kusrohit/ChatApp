@@ -1,12 +1,9 @@
-CHAT APPLICATION (FULL STACK)
+Chat Application
 ==================
-
-Requirements
----------------
+A simple full stack chat application
 
 
-How to use
+How to run locally?
 -------------
-
-
-<h4>Thanks to <strong>As a Programmer  `@asaprogrammer_</strong>`</h4>
+step 1: run command `npm run build` <br>
+step 2: run command `npm run start` <br>
